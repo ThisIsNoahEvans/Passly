@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17147" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jqx-wP-R6J">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17120"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Passly-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Passly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnu-Si-itd">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copied your password!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="903-lo-PhW">
+                                <rect key="frame" x="119.5" y="271" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V59-Vx-Twd">
+                                <rect key="frame" x="20" y="203" width="374" height="60"/>
+                                <color key="backgroundColor" name="purple1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FgN-Fl-9e9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Generate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="generateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2BD-MC-H82"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V59-Vx-Twd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="1mx-5K-dGL"/>
+                            <constraint firstItem="V59-Vx-Twd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4eN-9I-kUt"/>
+                            <constraint firstItem="V59-Vx-Twd" firstAttribute="centerX" secondItem="903-lo-PhW" secondAttribute="centerX" id="6ne-YA-4eN"/>
+                            <constraint firstItem="bnu-Si-itd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="7jR-cp-ehC"/>
+                            <constraint firstItem="903-lo-PhW" firstAttribute="top" secondItem="V59-Vx-Twd" secondAttribute="bottom" constant="8" id="Os9-Cv-up8"/>
+                            <constraint firstItem="V59-Vx-Twd" firstAttribute="centerX" secondItem="bnu-Si-itd" secondAttribute="centerX" id="Xb1-Ci-fQU"/>
+                            <constraint firstItem="V59-Vx-Twd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ueg-3L-biy"/>
+                            <constraint firstItem="bnu-Si-itd" firstAttribute="top" secondItem="903-lo-PhW" secondAttribute="bottom" constant="36" id="ugg-zq-ZYy"/>
+                            <constraint firstItem="bnu-Si-itd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vau-DF-V1m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Passly" largeTitleDisplayMode="always" id="4Rh-Ti-pSv"/>
+                    <connections>
+                        <outlet property="animateView" destination="bnu-Si-itd" id="Vjb-v4-IGk"/>
+                        <outlet property="genButtonOutlet" destination="V59-Vx-Twd" id="fbU-rv-M3c"/>
+                        <outlet property="labelOutlet" destination="903-lo-PhW" id="HFW-mx-t3W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="103.79464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o3V-Di-WH6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jqx-wP-R6J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="XwA-2g-Wrh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XLl-Wl-3RC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhK-so-JGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="purple1">
+            <color red="0.74900001287460327" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
