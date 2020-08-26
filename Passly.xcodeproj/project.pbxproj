@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA60DF224F4296900ED386E /* SuccessCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA60DF124F4296900ED386E /* SuccessCheck.swift */; };
 		4FE0AB8824AE56A9007D9765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE0AB8724AE56A9007D9765 /* AppDelegate.swift */; };
 		4FE0AB8A24AE56A9007D9765 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE0AB8924AE56A9007D9765 /* SceneDelegate.swift */; };
 		4FE0AB8C24AE56A9007D9765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE0AB8B24AE56A9007D9765 /* ViewController.swift */; };
 		4FE0AB8F24AE56A9007D9765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE0AB8D24AE56A9007D9765 /* Main.storyboard */; };
 		4FE0AB9124AE56AC007D9765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE0AB9024AE56AC007D9765 /* Assets.xcassets */; };
 		4FE0AB9424AE56AC007D9765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE0AB9224AE56AC007D9765 /* LaunchScreen.storyboard */; };
-		FEB00AA2F47435D36D2034CB /* Pods_Passly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE1887D4429D31DFFE87934 /* Pods_Passly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA60DF124F4296900ED386E /* SuccessCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessCheck.swift; sourceTree = "<group>"; };
 		4FE0AB8424AE56A9007D9765 /* Passly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE0AB8724AE56A9007D9765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FE0AB8924AE56A9007D9765 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,9 +27,6 @@
 		4FE0AB9324AE56AC007D9765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FE0AB9524AE56AC007D9765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FE0AB9B24AE56DB007D9765 /* Passly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Passly.entitlements; sourceTree = "<group>"; };
-		753E8827EEC58A22925163CF /* Pods-Passly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passly.release.xcconfig"; path = "Target Support Files/Pods-Passly/Pods-Passly.release.xcconfig"; sourceTree = "<group>"; };
-		7577BA4C25B2325F857D5BB4 /* Pods-Passly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passly.debug.xcconfig"; path = "Target Support Files/Pods-Passly/Pods-Passly.debug.xcconfig"; sourceTree = "<group>"; };
-		CAE1887D4429D31DFFE87934 /* Pods_Passly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB00AA2F47435D36D2034CB /* Pods_Passly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,8 +45,6 @@
 			children = (
 				4FE0AB8624AE56A9007D9765 /* Passly */,
 				4FE0AB8524AE56A9007D9765 /* Products */,
-				C4E1E492D23AE47EAB6BEF38 /* Pods */,
-				ECB1DF9222EECC10A010512F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +59,7 @@
 		4FE0AB8624AE56A9007D9765 /* Passly */ = {
 			isa = PBXGroup;
 			children = (
+				4FA60DF124F4296900ED386E /* SuccessCheck.swift */,
 				4FE0AB9B24AE56DB007D9765 /* Passly.entitlements */,
 				4FE0AB8724AE56A9007D9765 /* AppDelegate.swift */,
 				4FE0AB8924AE56A9007D9765 /* SceneDelegate.swift */,
@@ -76,24 +72,6 @@
 			path = Passly;
 			sourceTree = "<group>";
 		};
-		C4E1E492D23AE47EAB6BEF38 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7577BA4C25B2325F857D5BB4 /* Pods-Passly.debug.xcconfig */,
-				753E8827EEC58A22925163CF /* Pods-Passly.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		ECB1DF9222EECC10A010512F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CAE1887D4429D31DFFE87934 /* Pods_Passly.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,11 +79,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FE0AB9824AE56AC007D9765 /* Build configuration list for PBXNativeTarget "Passly" */;
 			buildPhases = (
-				E75C01BA24F9F52D82BFA4D8 /* [CP] Check Pods Manifest.lock */,
 				4FE0AB8024AE56A9007D9765 /* Sources */,
 				4FE0AB8124AE56A9007D9765 /* Frameworks */,
 				4FE0AB8224AE56A9007D9765 /* Resources */,
-				96613BE7F15FB584CFE7C7AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,53 +137,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		96613BE7F15FB584CFE7C7AC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Passly/Pods-Passly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Passly/Pods-Passly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Passly/Pods-Passly-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E75C01BA24F9F52D82BFA4D8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Passly-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		4FE0AB8024AE56A9007D9765 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA60DF224F4296900ED386E /* SuccessCheck.swift in Sources */,
 				4FE0AB8C24AE56A9007D9765 /* ViewController.swift in Sources */,
 				4FE0AB8824AE56A9007D9765 /* AppDelegate.swift in Sources */,
 				4FE0AB8A24AE56A9007D9765 /* SceneDelegate.swift in Sources */,
@@ -354,13 +289,13 @@
 		};
 		4FE0AB9924AE56AC007D9765 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7577BA4C25B2325F857D5BB4 /* Pods-Passly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Passly/Passly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TAZG5QA452;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
 				INFOPLIST_FILE = Passly/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
@@ -378,13 +313,13 @@
 		};
 		4FE0AB9A24AE56AC007D9765 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 753E8827EEC58A22925163CF /* Pods-Passly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Passly/Passly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TAZG5QA452;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
 				INFOPLIST_FILE = Passly/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;

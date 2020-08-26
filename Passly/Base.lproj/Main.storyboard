@@ -18,23 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnu-Si-itd">
-                                <rect key="frame" x="87" y="328" width="240" height="240"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copied your password!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="903-lo-PhW">
-                                <rect key="frame" x="119.5" y="271" width="175" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V59-Vx-Twd">
-                                <rect key="frame" x="20" y="203" width="374" height="60"/>
+                                <rect key="frame" x="20" y="204.5" width="374" height="60"/>
                                 <color key="backgroundColor" name="purple1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="FgN-Fl-9e9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="35"/>
                                 <state key="normal" title="Generate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -47,26 +37,44 @@
                                     <action selector="generateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2BD-MC-H82"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="64" minValue="5" maxValue="256" translatesAutoresizingMaskIntoConstraints="NO" id="A0b-JV-mG1">
+                                <rect key="frame" x="18" y="166.5" width="378" height="30"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="i6y-6U-79R"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="V59-Vx-Twd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="1mx-5K-dGL"/>
                             <constraint firstItem="V59-Vx-Twd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4eN-9I-kUt"/>
-                            <constraint firstItem="V59-Vx-Twd" firstAttribute="centerX" secondItem="903-lo-PhW" secondAttribute="centerX" id="6ne-YA-4eN"/>
-                            <constraint firstItem="bnu-Si-itd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="7jR-cp-ehC"/>
-                            <constraint firstItem="903-lo-PhW" firstAttribute="top" secondItem="V59-Vx-Twd" secondAttribute="bottom" constant="8" id="Os9-Cv-up8"/>
-                            <constraint firstItem="V59-Vx-Twd" firstAttribute="centerX" secondItem="bnu-Si-itd" secondAttribute="centerX" id="Xb1-Ci-fQU"/>
-                            <constraint firstItem="V59-Vx-Twd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ueg-3L-biy"/>
-                            <constraint firstItem="bnu-Si-itd" firstAttribute="top" secondItem="903-lo-PhW" secondAttribute="bottom" constant="36" id="ugg-zq-ZYy"/>
-                            <constraint firstItem="bnu-Si-itd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vau-DF-V1m"/>
+                            <constraint firstItem="A0b-JV-mG1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="DZC-QB-zeV"/>
+                            <constraint firstItem="V59-Vx-Twd" firstAttribute="top" secondItem="A0b-JV-mG1" secondAttribute="bottom" constant="9" id="Ebr-4w-YEu"/>
+                            <constraint firstItem="A0b-JV-mG1" firstAttribute="trailing" secondItem="V59-Vx-Twd" secondAttribute="trailing" id="W84-qF-rIR"/>
+                            <constraint firstItem="A0b-JV-mG1" firstAttribute="leading" secondItem="V59-Vx-Twd" secondAttribute="leading" id="dD6-Oe-VOo"/>
+                            <constraint firstItem="A0b-JV-mG1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pKo-k9-iVd"/>
+                            <constraint firstItem="V59-Vx-Twd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ueg-3L-biy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Passly" largeTitleDisplayMode="always" id="4Rh-Ti-pSv"/>
+                    <navigationItem key="navigationItem" title="Passly" largeTitleDisplayMode="always" id="4Rh-Ti-pSv">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="H93-kc-LxJ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Vyf-wW-Z3C">
+                                <rect key="frame" x="266" y="4" width="128" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <state key="normal" title="Custom Length">
+                                    <color key="titleColor" name="purple1"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <action selector="customLength:" destination="BYZ-38-t0r" id="KYP-TM-Mrk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="animateView" destination="bnu-Si-itd" id="Vjb-v4-IGk"/>
                         <outlet property="genButtonOutlet" destination="V59-Vx-Twd" id="fbU-rv-M3c"/>
-                        <outlet property="labelOutlet" destination="903-lo-PhW" id="HFW-mx-t3W"/>
+                        <outlet property="slider" destination="A0b-JV-mG1" id="jqt-AA-92u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -79,8 +87,11 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jqx-wP-R6J" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="XwA-2g-Wrh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="97.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

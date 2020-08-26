@@ -1,6 +1,0 @@
-framework module Pods_Passly {
-  umbrella header "Pods-Passly-umbrella.h"
-
-  export *
-  module * { export * }
-}
